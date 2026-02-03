@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-emerald-50 via-white to-green-50 text-gray-900 font-sans;
+    background-color: #fafef8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-600 via-emerald-500 to-green-500 bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .btn-soft {
+    @apply rounded-2xl transition-all duration-300 hover:shadow-lg active:scale-95;
+  }
+}
